@@ -23,6 +23,28 @@ agy plugin install .
 > [!NOTE]
 > If you previously configured these hooks manually via the `/hooks` menu, please remove those manual entries to prevent double audio playback.
 
+### Managing the Plugin
+
+You can manage the plugin's lifecycle using the built-in Antigravity CLI plugin manager.
+
+#### Disabling the Plugin
+If you need to temporarily mute the R2-D2 sounds (for example, during a meeting), you can disable the plugin without uninstalling it:
+```bash
+agy plugin disable walle-sounds
+```
+
+#### Enabling the Plugin
+To turn the sounds back on, simply enable it again:
+```bash
+agy plugin enable walle-sounds
+```
+
+#### Uninstalling
+If you wish to completely remove the plugin from your system, use the uninstall command:
+```bash
+agy plugin uninstall walle-sounds
+```
+
 ### Supported Events
 - `PreToolUse` (plays `r2d2_think.wav`)
 - `PostToolUse` (plays `r2d2_post_tool.wav`)
