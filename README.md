@@ -1,5 +1,7 @@
 # Antigravity CLI Custom Hooks
 
+[![License: CSSM Unlimited License v2.0](https://img.shields.io/badge/License-CSSM%20Unlimited%20License%20v2.0-blue.svg?logo=opensourceinitiative)](LICENSE)
+
 This repository contains custom bash scripts that integrate with the Google Antigravity CLI lifecycle events to play adorable R2-D2 sound effects. The high-quality audio files used in this project are sourced from the [RCProps/R2-D2-Sounds](https://github.com/RCProps/R2-D2-Sounds/tree/master) collection.
 
 ### Installation
