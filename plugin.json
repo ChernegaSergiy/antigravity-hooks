@@ -1,5 +1,5 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
-  "name": "walle-sounds",
+  "name": "r2d2-sounds",
   "description": "Plays cute R2-D2 sound effects during different agent lifecycle events to make your CLI feel alive."
 }

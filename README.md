@@ -37,19 +37,19 @@ agy "your task here"
 #### Disabling the Plugin
 If you need to temporarily mute the R2-D2 sounds (for example, during a meeting), you can disable the plugin without uninstalling it:
 ```bash
-agy plugin disable walle-sounds
+agy plugin disable r2d2-sounds
 ```
 
 #### Enabling the Plugin
 To turn the sounds back on, simply enable it again:
 ```bash
-agy plugin enable walle-sounds
+agy plugin enable r2d2-sounds
 ```
 
 #### Uninstalling
 If you wish to completely remove the plugin from your system, use the uninstall command:
 ```bash
-agy plugin uninstall walle-sounds
+agy plugin uninstall r2d2-sounds
 ```
 
 ### Supported Events
@@ -77,7 +77,7 @@ If you want to change any sounds or add new tool matchers in the future, follow 
 3. **Reinstall the Plugin:**
    Antigravity copies the plugin files during installation. To apply your changes, you **must** reinstall the plugin by running the following commands in the plugin directory:
    ```bash
-   agy plugin uninstall walle-sounds
+   agy plugin uninstall r2d2-sounds
    agy plugin install .
    ```
 
