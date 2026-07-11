@@ -40,6 +40,9 @@ case "$1" in
   "PreToolUseSearch")
     play_audio "$SOUNDS_DIR/r2d2_search.wav"
     ;;
+  "PreToolUseTerminal")
+    play_audio "$SOUNDS_DIR/r2d2_terminal.wav"
+    ;;
   "PreToolUse")
     play_audio "$SOUNDS_DIR/r2d2_think.wav"
     ;;
