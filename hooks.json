@@ -42,7 +42,17 @@
         ]
       },
       {
-        "matcher": "view_file|list_dir|grep_search|invoke_subagent|define_subagent|send_message|manage_subagents|schedule|manage_task|read_url|read_url_content",
+        "matcher": "view_file|list_dir|grep_search",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${ANTIGRAVITY_PLUGIN_ROOT:-$HOME/.gemini/config/plugins/walle-sounds}/play_sound.sh\" PreToolUseScan",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "invoke_subagent|define_subagent|send_message|manage_subagents|schedule|manage_task|read_url|read_url_content",
         "hooks": [
           {
             "type": "command",
