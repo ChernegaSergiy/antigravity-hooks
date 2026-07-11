@@ -1,0 +1,34 @@
+{
+  "hooks": [
+    {
+      "event": "pre-tool-call",
+      "description": "R2-D2 processing sound — перед виконанням інструмента",
+      "command": "./play_sound.sh pre-tool-call"
+    },
+    {
+      "event": "post-tool-call",
+      "description": "R2-D2 classic beep — після виконання інструмента",
+      "command": "./play_sound.sh post-tool-call"
+    },
+    {
+      "event": "pre-invocation",
+      "description": "R2-D2 detect sound — перед відповіддю LLM",
+      "command": "./play_sound.sh pre-invocation"
+    },
+    {
+      "event": "post-invocation",
+      "description": "R2-D2 tweet sound — після відповіді LLM",
+      "command": "./play_sound.sh post-invocation"
+    },
+    {
+      "event": "loop-stop",
+      "description": "R2-D2 excited sound — агент завершив роботу",
+      "command": "./play_sound.sh loop-stop"
+    },
+    {
+      "event": "on-error",
+      "description": "R2-D2 тривожний звук — при помилці",
+      "command": "./play_sound.sh on-error"
+    }
+  ]
+}

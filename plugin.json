@@ -1,0 +1,5 @@
+{
+  "name": "walle-sounds",
+  "version": "1.0.0",
+  "description": "Plays WALL-E sounds at different agent lifecycle events."
+}
