@@ -52,6 +52,16 @@
         ]
       },
       {
+        "matcher": "ask_permission",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${ANTIGRAVITY_PLUGIN_ROOT:-$HOME/.gemini/config/plugins/walle-sounds}/play_sound.sh\" PreToolUsePermission",
+            "timeout": 5
+          }
+        ]
+      },
+      {
         "matcher": "invoke_subagent|define_subagent|send_message|manage_subagents|schedule|manage_task|read_url|read_url_content",
         "hooks": [
           {
