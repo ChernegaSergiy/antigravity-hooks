@@ -28,6 +28,23 @@ agy plugin install .
 - `PostInvocation` (plays `r2d2_post_invoke.wav`)
 - `Stop` (plays `r2d2_done.wav`)
 
+## Repository Structure
+
+```text
+antigravity-hooks/
++-- sounds/                   # R2-D2 audio files collection
+|   +-- r2d2_done.wav         # Played on agent task completion
+|   +-- r2d2_post_invoke.wav  # Played after LLM response
+|   +-- r2d2_post_tool.wav    # Played after tool execution
+|   +-- r2d2_pre_invoke.wav   # Played before sending prompt to LLM
+|   \-- r2d2_think.wav        # Played before tool execution
++-- LICENSE                   # CSSM Unlimited License v2.0
++-- README.md                 # Documentation and installation guide
++-- hooks.json                # Antigravity CLI events configuration
++-- play_sound.sh             # Bash script to play sounds via PipeWire
+\-- plugin.json               # Official Antigravity plugin manifest
+```
+
 ## Contributing
 
 Contributions are welcome and appreciated! Here's how you can contribute:
