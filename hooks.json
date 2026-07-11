@@ -2,7 +2,7 @@
   "walle-sounds": {
     "PreToolUse": [
       {
-        "matcher": "^search_web$",
+        "matcher": "search_web",
         "hooks": [
           {
             "type": "command",
@@ -12,7 +12,7 @@
         ]
       },
       {
-        "matcher": "^(run_command|replace_file_content|multi_replace_file_content|write_to_file|view_file|list_dir|grep_search|ask_question)$",
+        "matcher": "run_command|view_file|write_to_file|replace_file_content|multi_replace_file_content|list_dir|grep_search|ask_question|invoke_subagent|define_subagent|send_message|manage_subagents|schedule|manage_task|read_url|read_url_content",
         "hooks": [
           {
             "type": "command",
