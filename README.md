@@ -8,15 +8,13 @@ This plugin plays R2-D2 sound effects (sourced from [RCProps/R2-D2-Sounds](https
 
 ### Installation
 
-1. The sounds and scripts are managed here, but executed by the CLI.
-2. In the CLI, run the `/hooks` command.
-3. For each event (e.g. `PreInvocation`, `PostToolUse`), select `+ Add new hook...`
-4. Set the command to point to the `play_sound.sh` script in this repository, passing the event name as an argument.
+This repository is formatted as a native Antigravity CLI plugin. You can install it globally with a single command:
 
-Example command for `PreInvocation`:
 ```bash
-/home/serhii/Development/General/antigravity-hooks/play_sound.sh PreInvocation
+agy plugin install /path/to/this/repository
 ```
+
+*Note: If you previously configured these hooks manually via the `/hooks` menu, please remove those manual entries to prevent double audio playback.*
 
 ### Supported Events
 - `PreToolUse` (plays `r2d2_think.wav`)
