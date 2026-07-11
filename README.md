@@ -8,10 +8,18 @@ This plugin plays R2-D2 sound effects (sourced from [RCProps/R2-D2-Sounds](https
 
 ### Installation
 
-This repository is formatted as a native Antigravity CLI plugin. You can install it globally with a single command:
+This repository is formatted as a native Antigravity CLI plugin. You can install it globally with a single command.
 
+**Option 1: Install directly from GitHub (Recommended)**
 ```bash
-agy plugin install /path/to/this/repository
+agy plugin install https://github.com/ChernegaSergiy/antigravity-hooks
+```
+
+**Option 2: Clone and install locally**
+```bash
+git clone https://github.com/ChernegaSergiy/antigravity-hooks.git
+cd antigravity-hooks
+agy plugin install .
 ```
 
 > [!NOTE]
