@@ -80,7 +80,8 @@ If you want to change any sounds or add new tool matchers in the future, follow 
    agy plugin uninstall walle-sounds
    agy plugin install .
    ```
-   *(Note: You do not need to restart the Antigravity agent; changes take effect immediately on the next tool use!)*
+   > [!NOTE]
+   > You do not need to restart the Antigravity agent; changes take effect immediately on the next tool use!
 
 ### OS Compatibility
 
