@@ -74,9 +74,14 @@
     ],
     "PostToolUse": [
       {
-        "type": "command",
-        "command": "bash \"${ANTIGRAVITY_PLUGIN_ROOT:-$HOME/.gemini/config/plugins/walle-sounds}/play_sound.sh\" PostToolUse",
-        "timeout": 5
+        "matcher": "run_command|search_web",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${ANTIGRAVITY_PLUGIN_ROOT:-$HOME/.gemini/config/plugins/walle-sounds}/play_sound.sh\" PostToolUse",
+            "timeout": 5
+          }
+        ]
       }
     ],
     "PreInvocation": [
