@@ -14,7 +14,8 @@ This repository is formatted as a native Antigravity CLI plugin. You can install
 agy plugin install /path/to/this/repository
 ```
 
-*Note: If you previously configured these hooks manually via the `/hooks` menu, please remove those manual entries to prevent double audio playback.*
+> [!NOTE]
+> If you previously configured these hooks manually via the `/hooks` menu, please remove those manual entries to prevent double audio playback.
 
 ### Supported Events
 - `PreToolUse` (plays `r2d2_think.wav`)
