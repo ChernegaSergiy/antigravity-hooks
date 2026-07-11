@@ -32,22 +32,22 @@ play_audio() {
 }
 
 case "$1" in
-  "pre-tool-call" | "PreToolUse")
+  "PreToolUse")
     play_audio "$SOUNDS_DIR/r2d2_think.wav"
     ;;
-  "post-tool-call" | "PostToolUse")
+  "PostToolUse")
     play_audio "$SOUNDS_DIR/r2d2_post_tool.wav"
     ;;
-  "pre-invocation" | "PreInvocation")
+  "PreInvocation")
     play_audio "$SOUNDS_DIR/r2d2_pre_invoke.wav"
     ;;
-  "post-invocation" | "PostInvocation")
+  "PostInvocation")
     play_audio "$SOUNDS_DIR/r2d2_post_invoke.wav"
     ;;
-  "loop-stop" | "Stop")
+  "Stop")
     play_audio "$SOUNDS_DIR/r2d2_done.wav"
     ;;
-  "on-error")
+  "OnError")
     play_audio "$SOUNDS_DIR/r2d2_error.wav"
     ;;
 esac
