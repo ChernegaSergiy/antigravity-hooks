@@ -23,3 +23,7 @@ agy plugin install /path/to/this/repository
 - `PreInvocation` (plays `r2d2_pre_invoke.wav`)
 - `PostInvocation` (plays `r2d2_post_invoke.wav`)
 - `Stop` (plays `r2d2_done.wav`)
+
+## License
+
+This project is licensed under the CSSM Unlimited License v2.0 (CSSM-ULv2). See the [LICENSE](LICENSE) file for details.
