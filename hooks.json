@@ -3,7 +3,25 @@
     "PreToolUse": [
       {
         "type": "command",
+        "command": "bash \"${ANTIGRAVITY_PLUGIN_ROOT:-$HOME/.gemini/config/plugins/walle-sounds}/play_sound.sh\" PreToolUseSearch",
+        "matchers": [
+          "^search_web$"
+        ],
+        "timeout": 5
+      },
+      {
+        "type": "command",
         "command": "bash \"${ANTIGRAVITY_PLUGIN_ROOT:-$HOME/.gemini/config/plugins/walle-sounds}/play_sound.sh\" PreToolUse",
+        "matchers": [
+          "^run_command$",
+          "^replace_file_content$",
+          "^multi_replace_file_content$",
+          "^write_to_file$",
+          "^view_file$",
+          "^list_dir$",
+          "^grep_search$",
+          "^ask_question$"
+        ],
         "timeout": 5
       }
     ],
