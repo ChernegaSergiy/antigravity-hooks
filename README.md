@@ -66,6 +66,22 @@ agy plugin uninstall walle-sounds
 - `PostInvocation` (plays `r2d2_post_invoke.wav`)
 - `Stop` (plays `r2d2_done.wav`)
 
+## Customizing and Updating
+
+If you want to change any sounds or add new tool matchers in the future, follow these steps:
+
+1. **Change the Sound File:** 
+   Replace the corresponding `.wav` file in the `sounds/` directory. For example, to change the terminal sound, overwrite `sounds/r2d2_terminal.wav`.
+2. **Add New Matchers (Optional):**
+   If you want a specific sound for a new tool, edit `play_sound.sh` to add a handler, and update `hooks.json` to map the tool name to your new handler.
+3. **Reinstall the Plugin:**
+   Antigravity copies the plugin files during installation. To apply your changes, you **must** reinstall the plugin by running the following commands in the plugin directory:
+   ```bash
+   agy plugin uninstall walle-sounds
+   agy plugin install .
+   ```
+   *(Note: You do not need to restart the Antigravity agent; changes take effect immediately on the next tool use!)*
+
 ### OS Compatibility
 
 The `play_sound.sh` script is completely cross-platform and will automatically detect and use the appropriate audio player for your system under the hood:
