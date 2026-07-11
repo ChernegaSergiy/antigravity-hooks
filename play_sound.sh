@@ -37,6 +37,9 @@ play_audio() {
 }
 
 case "$1" in
+  "PreToolUseSearch")
+    play_audio "$SOUNDS_DIR/r2d2_search.wav"
+    ;;
   "PreToolUse")
     play_audio "$SOUNDS_DIR/r2d2_think.wav"
     ;;
