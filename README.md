@@ -54,7 +54,8 @@ agy plugin uninstall walle-sounds
 
 ### Supported Events
 - `PreToolUse` (plays `r2d2_think.wav` by default)
-  - *Special Case:* If the tool is `search_web`, it plays `r2d2_search.wav` (an "over here" scan sound) thanks to Antigravity CLI Tool Matchers!
+  - *Special Case:* For `search_web`, it plays `r2d2_search.wav` (an "over here" scan sound) thanks to Antigravity CLI Tool Matchers!
+  - *Special Case:* For `run_command`, it plays `r2d2_terminal.wav` (a "short circuit" work sound).
 - `PostToolUse` (plays `r2d2_post_tool.wav`)
 - `PreInvocation` (plays `r2d2_pre_invoke.wav`)
 - `PostInvocation` (plays `r2d2_post_invoke.wav`)
