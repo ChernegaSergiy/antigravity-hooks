@@ -2,6 +2,11 @@
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SOUNDS_DIR="$BASE_DIR/sounds"
 
+# Check if sounds are muted globally
+if [ "$WALLE_SOUNDS_MUTE" = "1" ] || [ "$WALLE_SOUNDS_MUTE" = "true" ]; then
+    exit 0
+fi
+
 play_audio() {
     local file="$1"
 
