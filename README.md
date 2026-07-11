@@ -1,10 +1,6 @@
 # Antigravity CLI Custom Hooks
 
-This repository contains custom hooks and plugins for the [Google Antigravity CLI](https://antigravity.google/).
-
-## R2-D2 Sounds Plugin
-
-This plugin plays R2-D2 sound effects (sourced from [RCProps/R2-D2-Sounds](https://github.com/RCProps/R2-D2-Sounds/tree/master)) during different stages of the Antigravity CLI execution loop.
+This repository contains custom bash scripts that integrate with the Google Antigravity CLI lifecycle events to play adorable R2-D2 sound effects. The high-quality audio files used in this project are sourced from the [RCProps/R2-D2-Sounds](https://github.com/RCProps/R2-D2-Sounds/tree/master) collection.
 
 ### Installation
 
