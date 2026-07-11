@@ -61,7 +61,7 @@ agy plugin uninstall walle-sounds
   - *Special Case:* For file system navigation (`view_file`, `list_dir`, `grep_search`), it plays `r2d2_scan.wav` (a short, quiet scan blip).
   - *Special Case:* For `ask_permission`, it plays `r2d2_permission.wav` (a sad, pleading beep).
 - `PostToolUse` (plays `r2d2_post_tool.wav`)
-  - *Note:* Restricted to `run_command` and `search_web` to prevent sound overlap on fast tools.
+  - *Note:* Restricted to `run_command` and `search_web` to prevent overlapping sounds on fast tools.
 - `PreInvocation` (plays `r2d2_pre_invoke.wav`)
 - `PostInvocation` (plays `r2d2_post_invoke.wav`)
 - `Stop` (plays `r2d2_done.wav`)
