@@ -1,5 +1,16 @@
 {
   "name": "walle-sounds",
+  "displayName": "R2-D2 Antigravity Sounds",
+  "description": "Plays cute R2-D2 sound effects during different agent lifecycle events to make your CLI feel alive.",
   "version": "1.0.0",
-  "description": "Plays WALL-E sounds at different agent lifecycle events."
+  "author": {
+    "name": "Serhii",
+    "email": "chernegasergiy3@gmail.com"
+  },
+  "keywords": [
+    "sounds",
+    "r2d2",
+    "fun",
+    "hooks"
+  ]
 }
