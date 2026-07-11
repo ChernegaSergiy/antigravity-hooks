@@ -27,6 +27,13 @@ agy plugin install .
 
 You can manage the plugin's lifecycle using the built-in Antigravity CLI plugin manager.
 
+#### Muting via Environment Variable
+If you only want to mute the sounds for a single terminal session or a specific command, you can set the `WALLE_SOUNDS_MUTE` environment variable:
+```bash
+export WALLE_SOUNDS_MUTE=1
+agy "your task here"
+```
+
 #### Disabling the Plugin
 If you need to temporarily mute the R2-D2 sounds (for example, during a meeting), you can disable the plugin without uninstalling it:
 ```bash
