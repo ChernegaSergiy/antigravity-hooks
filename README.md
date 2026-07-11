@@ -52,6 +52,14 @@ agy plugin uninstall walle-sounds
 - `PostInvocation` (plays `r2d2_post_invoke.wav`)
 - `Stop` (plays `r2d2_done.wav`)
 
+### OS Compatibility
+
+The `play_sound.sh` script is completely cross-platform and will automatically detect and use the appropriate audio player for your system under the hood:
+
+- **Linux**: Automatically uses `pw-play` (PipeWire), `paplay` (PulseAudio), `aplay` (ALSA), or `ffplay`.
+- **macOS**: Native support via the built-in `afplay` command.
+- **Windows**: Uses native `powershell.exe` `Media.SoundPlayer` APIs (works perfectly when invoked from Git Bash or WSL via path conversion).
+
 ## Repository Structure
 
 ```text
