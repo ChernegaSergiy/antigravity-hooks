@@ -59,6 +59,7 @@ agy plugin uninstall walle-sounds
   - *Special Case:* For file editing tools (`replace_file_content`, `write_to_file`, etc.), it plays `r2d2_edit.wav` (an excited fix sound).
   - *Special Case:* For `ask_question`, it plays `r2d2_ask.wav` (a friendly, happy beep).
   - *Special Case:* For file system navigation (`view_file`, `list_dir`, `grep_search`), it plays `r2d2_scan.wav` (a short, quiet scan blip).
+  - *Special Case:* For `ask_permission`, it plays `r2d2_permission.wav` (a sad, pleading beep).
 - `PostToolUse` (plays `r2d2_post_tool.wav`)
 - `PreInvocation` (plays `r2d2_pre_invoke.wav`)
 - `PostInvocation` (plays `r2d2_post_invoke.wav`)
