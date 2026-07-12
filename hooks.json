@@ -84,13 +84,6 @@
         ]
       }
     ],
-    "OnError": [
-      {
-        "type": "command",
-        "command": "bash \"${ANTIGRAVITY_PLUGIN_ROOT:-$HOME/.gemini/config/plugins/r2d2-sounds}/play_sound.sh\" OnError",
-        "timeout": 5
-      }
-    ],
     "PreInvocation": [
       {
         "type": "command",

@@ -70,7 +70,4 @@ case "$1" in
   "Stop")
     play_audio "$SOUNDS_DIR/r2d2_done.wav"
     ;;
-  "OnError")
-    play_audio "$SOUNDS_DIR/r2d2_error.wav"
-    ;;
 esac
