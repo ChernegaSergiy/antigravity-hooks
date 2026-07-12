@@ -31,7 +31,7 @@ You can manage the plugin's lifecycle using the built-in Antigravity CLI plugin 
 If you only want to mute the sounds for a single terminal session or a specific command, you can set the `R2D2_SOUNDS_MUTE` environment variable:
 ```bash
 export R2D2_SOUNDS_MUTE=1
-agy
+agy -i "your task here"
 ```
 
 #### Disabling the Plugin
