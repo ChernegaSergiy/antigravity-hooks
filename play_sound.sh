@@ -55,6 +55,9 @@ case "$1" in
   "PreToolUsePermission")
     play_audio "$SOUNDS_DIR/r2d2_permission.wav"
     ;;
+  "PreToolUseSubagent")
+    play_audio "$SOUNDS_DIR/r2d2_subagent.wav"
+    ;;
   "PreToolUse")
     play_audio "$SOUNDS_DIR/r2d2_think.wav"
     ;;
