@@ -60,6 +60,7 @@ agy plugin uninstall r2d2-sounds
   - *Special Case:* For `ask_question`, it plays `r2d2_ask.wav` (a friendly, happy beep).
   - *Special Case:* For file system navigation (`view_file`, `list_dir`, `grep_search`), it plays `r2d2_scan.wav` (a short, quiet scan blip).
   - *Special Case:* For `ask_permission`, it plays `r2d2_permission.wav` (a sad, pleading beep).
+  - *Special Case:* For subagent communication (`invoke_subagent`, `send_message`, etc.), it plays `r2d2_subagent.wav` (a data transmission sound).
 - `PostToolUse` (plays `r2d2_post_tool.wav`)
   - *Note:* Restricted to `run_command` and `search_web` to prevent overlapping sounds on fast tools.
 - `PreInvocation` (plays `r2d2_pre_invoke.wav`)
@@ -107,6 +108,7 @@ antigravity-hooks/
 |   +-- r2d2_pre_invoke.wav   # Played before sending prompt to LLM
 |   +-- r2d2_scan.wav         # Played when reading files or folders
 |   +-- r2d2_search.wav       # Played when searching the web
+|   +-- r2d2_subagent.wav     # Played when communicating with subagents
 |   +-- r2d2_terminal.wav     # Played when running terminal commands
 |   \-- r2d2_think.wav        # Played as fallback before tool execution
 +-- LICENSE                   # CSSM Unlimited License v2.0
