@@ -100,7 +100,7 @@ antigravity-hooks/
 |   +-- r2d2_ask.wav          # Played when asking questions
 |   +-- r2d2_done.wav         # Played on agent task completion
 |   +-- r2d2_edit.wav         # Played when editing files
-|   +-- r2d2_error.wav        # Error sound (for fallback or manual use)
+|   +-- r2d2_error.wav        # Error sound (currently unused)
 |   +-- r2d2_permission.wav   # Played when asking for permissions
 |   +-- r2d2_post_invoke.wav  # Played after LLM response
 |   +-- r2d2_post_tool.wav    # Played after tool execution
