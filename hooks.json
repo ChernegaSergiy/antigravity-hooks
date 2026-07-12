@@ -62,7 +62,17 @@
         ]
       },
       {
-        "matcher": "invoke_subagent|define_subagent|send_message|manage_subagents|schedule|manage_task|read_url|read_url_content",
+        "matcher": "invoke_subagent|define_subagent|send_message|manage_subagents",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${ANTIGRAVITY_PLUGIN_ROOT:-$HOME/.gemini/config/plugins/r2d2-sounds}/play_sound.sh\" PreToolUseSubagent",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "schedule|manage_task|read_url|read_url_content",
         "hooks": [
           {
             "type": "command",
