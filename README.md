@@ -97,15 +97,22 @@ The `play_sound.sh` script is completely cross-platform and will automatically d
 ```text
 antigravity-hooks/
 +-- sounds/                   # R2-D2 audio files collection
+|   +-- r2d2_ask.wav          # Played when asking questions
 |   +-- r2d2_done.wav         # Played on agent task completion
+|   +-- r2d2_edit.wav         # Played when editing files
+|   +-- r2d2_error.wav        # Error sound (for fallback or manual use)
+|   +-- r2d2_permission.wav   # Played when asking for permissions
 |   +-- r2d2_post_invoke.wav  # Played after LLM response
 |   +-- r2d2_post_tool.wav    # Played after tool execution
 |   +-- r2d2_pre_invoke.wav   # Played before sending prompt to LLM
-|   \-- r2d2_think.wav        # Played before tool execution
+|   +-- r2d2_scan.wav         # Played when reading files or folders
+|   +-- r2d2_search.wav       # Played when searching the web
+|   +-- r2d2_terminal.wav     # Played when running terminal commands
+|   \-- r2d2_think.wav        # Played as fallback before tool execution
 +-- LICENSE                   # CSSM Unlimited License v2.0
 +-- README.md                 # Documentation and installation guide
 +-- hooks.json                # Antigravity CLI events configuration
-+-- play_sound.sh             # Bash script to play sounds via PipeWire
++-- play_sound.sh             # Bash script to play sounds across OSes
 \-- plugin.json               # Official Antigravity plugin manifest
 ```
 
