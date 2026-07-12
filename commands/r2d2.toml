@@ -1,0 +1,13 @@
+description = "List available R2-D2 sounds or play a specific sound"
+
+prompt = """
+You are handling the `/r2d2` command for the `r2d2-sounds` plugin.
+
+If the user typed just `/r2d2`, you MUST use the `list_dir` tool to list the contents of `~/.gemini/config/plugins/r2d2-sounds/sounds` and present a nice markdown bulleted list of all available sounds (without the .wav extension).
+
+If the user provided an argument (e.g., `/r2d2 r2d2_done`), you MUST use the `run_command` tool to play the sound directly.
+Example command to play a sound on Linux/macOS:
+`pw-play ~/.gemini/config/plugins/r2d2-sounds/sounds/NAME.wav || paplay ~/.gemini/config/plugins/r2d2-sounds/sounds/NAME.wav || afplay ~/.gemini/config/plugins/r2d2-sounds/sounds/NAME.wav`
+
+After playing the sound, just reply with a brief confirmation message (like "Beep boop! Playing r2d2_done").
+"""
